@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/welcomeUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                 User, "
+        android:textColor="#FFA500"
+        android:textSize="18sp"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/featuredItemsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Featured Items"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/featuredItemsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/featuredItemsHeading"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/featuredItemsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/yourItemsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/featuredItemsScrollView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Your Items"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/yourItemsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourItemsHeading"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/yourItemsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/recentItemsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourItemsScrollView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Recent Items"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/recentItemsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recentItemsHeading"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+            <include layout="@layout/item_block" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
