@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:background="#FFFFFF"
+        android:text="Registration"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Name"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:hint="   Enter name"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_block"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Email"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:hint="   Enter email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_block"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Contact Number"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:hint="   Enter contact number"
+        android:inputType="textPhonetic"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_block"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Country"
+        android:background="#FFFFFF"/>
+
+    <Spinner
+        android:id="@+id/Country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="City"
+        android:background="#FFFFFF"/>
+
+    <Spinner
+        android:id="@+id/City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFA500"
+        android:text="Sign up"
+        android:background="@drawable/rounded_block"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="160dp"
+        android:background="#FFFFFF"
+        android:textColor="#666666"
+        android:text="Login" />
+
+</LinearLayout>
+
